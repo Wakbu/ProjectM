@@ -11,11 +11,11 @@ public class CameraCollision : MonoBehaviour
     [Tooltip("카메라가 바라볼 기준점(보통 플레이어 머리 높이의 피벗).")]
     public Transform pivot;               // 플레이어 또는 CameraPivot
     [Tooltip("Pivot 기준 추가 오프셋(피벗을 플레이어에 직접 지정했다면 여기서 높이 등 보정).")]
-    public Vector3 pivotOffset = new Vector3(0f, 2.0f, 0f);
+    public Vector3 pivotOffset = new Vector3(0f, 4.0f, 0f);
 
     [Header("Distance")]
     [Tooltip("카메라의 기본(최대) 거리. ThirdPersonCamera.distance와 일치시키세요.")]
-    public float maxDistance = 5f;
+    public float maxDistance = 7f;
     [Tooltip("장애물에 너무 붙지 않게 하는 최소 거리.")]
     public float minDistance = 0.2f;
 
